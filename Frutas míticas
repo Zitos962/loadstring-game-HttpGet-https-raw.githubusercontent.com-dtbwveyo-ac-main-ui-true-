@@ -1,0 +1,19 @@
+-- Script fictício: "Chuva de Frutas Míticas"
+-- Objetivo: Criar um cenário imaginário onde frutas míticas aparecem como chuva no jogo
+
+print("Ativando Chuva de Frutas Míticas...")
+
+-- Função para gerar frutas aleatórias no mapa
+function gerarFrutaMítica()
+    local frutasMiticas = {"Dragon", "Leopard", "Venom", "Soul"}
+    local frutaEscolhida = frutasMiticas[math.random(#frutasMiticas)]
+    local x, y, z = math.random(-5000, 5000), math.random(50, 200), math.random(-5000, 5000)
+
+    print("Fruta mítica gerada: " .. frutaEscolhida .. " em (" .. x .. ", " .. y .. ", " .. z .. ")")
+    -- Simula a fruta caindo do céu
+    criarObjetoFruta(frutaEscolhida, x, y, z)
+end
+
+-- Simulação de criação de objetos (fictício)
+function criarObjetoFruta(nome, x, y, z)
+    print("Criando fruta " .. nome .. " no ar, posição (" .. x .. ", " .. y .. ", " .. z
